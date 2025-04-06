@@ -45,10 +45,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
-
+    'oauth2_provider',
+    'welcome',
 ]
 
 AUTH_USER_MODEL = 'users.User'
+LOGIN_URL = '/admin/login/'
 
 
 
@@ -147,3 +149,10 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+# MEDIA_ROOT = (
+# BASE_DIR
+# )
+
+
+# MEDIA_URL = '/media/'

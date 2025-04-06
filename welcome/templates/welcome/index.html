@@ -1,0 +1,25 @@
+
+
+{% load static %}
+
+{% block header %}
+
+<h1>Welcome to the Django + OAuth Toolkit Project 🙂</h1>
+</div>
+{% endblock header %}
+{% block content %}
+<h2>
+Just to have some text in the page.
+</h2>
+<h2>
+I can even have an image 🧑‍💻.Cool Right!  (🫤) 
+<br>
+<img src="{% static 'api/flower.webp' %}" alt="Most beautiful flower in the world" width="200">
+
+</h2>
+<p>
+    <strong> This is a link to register an app :</strong><br>
+    <a href="{% url 'oauth2_provider:register' %}">Go to o/applications/register/ Page 🧐</a>
+ </p>
+
+{% endblock content %}
