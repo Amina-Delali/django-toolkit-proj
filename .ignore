@@ -1,0 +1,20 @@
+
+users/migrations/*
+users/migrations
+api/migrations/*
+api/migrations
+api/__pycache__/*
+api/__pycache__
+
+.vercel
+*.log
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+api/.env
+
+# Environments 
+toolkit-env/*
+toolkit-env
