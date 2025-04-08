@@ -52,10 +52,11 @@ urlpatterns = [
     # path('o/', include((oauth2_endpoint_views, 'oauth2_provider'), namespace="oauth2_provider")),
 
     path('', include(('welcome.urls',"welcome"), namespace="welcome")),
+    path('todos/', include(('todos.urls',"todos"), namespace="todos")),
     
 
-]
 
+]
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

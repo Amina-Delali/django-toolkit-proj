@@ -22,4 +22,29 @@ I can even have an image 🧑‍💻.Cool Right!  (🫤)
     <a href="{% url 'oauth2_provider:register' %}">Go to o/applications/register/ Page 🧐</a>
  </p>
 
+ <strong> To Go To the Admin Page :</strong><br>
+ <a href="{% url 'admin:login' %}">Go to the admin page 🧑‍💻</a>
+</p>
+ <strong> To Go To the Api Overview Page :</strong><br>
+ <a href="{% url 'todos:api-overview' %}">Go to the api overview page 📜</a>
+</p>
+
+<strong> To See the list of tasks :</strong><br>
+<a href="{% url 'todos:task-list' %}">See the list of tasks📃 </a>
+</p>
+
+<strong> To See one task detail: task pk = 5 :</strong><br>
+<a href="{% url 'todos:task-Detail' 5 %}">See the details of task 5🔬 </a>
+</p>
+<strong> To Update a task: task pk = 5 :</strong><br>
+<a href="{% url 'todos:task-update' 5 %}">Edit the task 5🖊️ </a>
+</p>
+<strong> To create a new task :</strong><br>
+<a href="{% url 'todos:task-Create' %}">Create a new task ✒️</a>
+</p>
+<strong> To delete task 2 (works one time) :</strong><br>
+<a href="{% url 'todos:task-delete' 2 %}">delete task 2 🗑️</a>
+</p>
+
+
 {% endblock content %}
